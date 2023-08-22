@@ -1,44 +1,57 @@
-# Read a String statement from CMD
-user_inp = input("Enter a string:")
+def main():
+    try:
+        #Read a String statement from the command line
+        user_input = input("Enter a string: ")
+        if(len(user_input)==0):
+            print("The input cannot be empty")
+            return
 
-#Total number of characters present in the statement
-total_characters = len(user_inp)
-print("Total number of characters:", total_characters)
+        # Find out the total number of characters present in the statement
+        total_characters = len(user_input)
 
-#Total number of duplicate Characters in the statement
-char_count = {}
-for char in user_inp:
-    char_count[char] = char_count.get(char, 0) + 1
+        # Find out the total number of duplicate Characters in the statement
+        char_count = {}
+        for char in user_input:
+            char_count[char] = char_count.get(char, 0) + 1
 
-total_dupe_chars = sum(count > 1 for count in char_count.values())
-print("Total number of dupe characters:", total_dupe_chars)
+        total_duplicate_characters = sum(count > 1 for count in char_count.values())
 
-# Total number of words present in the statement
-words = user_inp.split()
-total_words = len(words)
-print("Total number of words:", total_words)
+        # Find out the total number of words present in the statement
+        words = user_input.split()
+        total_words = len(words)
 
-#Total number of duplicate words in the statement
-word_count = {}
-for word in words:
-    word_count[word] = word_count.get(word, 0) + 1
+        # Find out the total number of duplicate words in the statement
+        word_count = {}
+        for word in words:
+            word_count[word] = word_count.get(word, 0) + 1
 
-total_duplicate_words = sum(count > 1 for count in word_count.values())
-print("Total number of duplicate words:", total_duplicate_words)
+        total_duplicate_words = sum(count > 1 for count in word_count.values())
 
-# Reverse the characters
-reverse = user_inp[::-1]
-print("Reversed characters:", reverse)
+        # Reverse the characters present in the statement
+        reversed_characters = user_input[::-1]
 
-# Reverse the words
-reversed_words = ' '.join(reversed(words))
-print("Reversed words:", reversed_words)
+        # Reverse the words present in the statement
+        reversed_words = ' '.join(reversed(words))
 
-# Form a new statement with reversed words
-new_statement = reversed_words
+        # Form a new statement from the reversed words
+        new_statement = reversed_words
 
-# Remove the duplicate characters from the latest statement
-new_statement = ''.join(char for char in new_statement if char_count[char] == 1)
+        # Remove the duplicate characters from the latest statement
+        new_statement = ''.join(char for char in new_statement if char_count.get(char, 0) == 1)
 
-# Print the final String statement
-print("Final statement:", new_statement)
+        # Print the final latest String statement
+        print("Original statement:", user_input)
+        print("Total characters:", total_characters)
+        print("Total duplicate characters:", total_duplicate_characters)
+        print("Total words:", total_words)
+        print("Total duplicate words:", total_duplicate_words)
+        print("Reversed characters:", reversed_characters)
+        print("Reversed words:", reversed_words)
+        print("New statement from reversed words:", new_statement)
+        print("Final statement:", new_statement)
+
+    except Exception as e:
+        print("Error occurred:", e)
+
+if __name__ == "__main__":
+    main()
