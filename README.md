@@ -1,12 +1,43 @@
-# ramp_up_python
-This repository consists of Python tasks. 
+Write a Python program for the following requirements.
+Read a String statement from the command line
 
-TO RUN:
+Findout total number of characters present in the statement.
 
-Access the file directory with "cd" in command line.
+Findout toal number of duplicate Characters in the statement
 
-Go to that file direcory and check weather the file is present in the directory with "ls".
+Findout total number of words present in the statement
 
-now, python <file_name>.py. using this command you can execute the code in command line.
+Findout toal number of duplicate wordsin the statement
 
-This is the way to run my task file.
+Reverse the characters present in the statement.
+
+Reverse the words present in the statement.
+
+Form a new statement from the reversed words.
+
+Remove the duplicate characters from the latest statement.
+
+Print final latest String statement.
+
+Task 2
+Write a Python program for the following requirements
+To validate the entered email address if the email is valid then write into a file.
+
+Continue this operation until uses says No/exit.
+
+If user says Yes continue Validating emails and writing into file
+
+If user says No then display all the email IDs from the file.
+
+To execute the python file from command prompt
+Install neccessary modules such as ping3 from pip using the commands :
+
+pip install ping3
+
+copy code to a new file(with extension .py)
+
+Execute it from command prompt using the command :
+
+python filename.py
+
+OR Execute it by using any IDLE.
