@@ -1,4 +1,5 @@
 Write a Python program for the following requirements.
+
 Read a String statement from the command line
 
 Findout total number of characters present in the statement.
@@ -20,7 +21,9 @@ Remove the duplicate characters from the latest statement.
 Print final latest String statement.
 
 Task 2
+
 Write a Python program for the following requirements
+
 To validate the entered email address if the email is valid then write into a file.
 
 Continue this operation until uses says No/exit.
@@ -30,6 +33,7 @@ If user says Yes continue Validating emails and writing into file
 If user says No then display all the email IDs from the file.
 
 To execute the python file from command prompt
+
 Install neccessary modules such as ping3 from pip using the commands :
 
 pip install ping3
