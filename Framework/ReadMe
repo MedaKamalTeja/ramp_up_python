@@ -1,10 +1,16 @@
+
+
 This is testcases for Robot framework using selenium module:
 
 
 
 
 Here i have defined different folders which contains code blocks, 
+
 In every directory i have defined the path to the recurring directory to run the testcase.
+
 I have done 2 testcases for Login page and 2 testcases for registration page with different websites.
-  All the website which i have used here are Open-Source.
+
+All the website which i have used here are Open-Source.
+
 Also defined "Jenkins" and "Docker" files to deploy and run the code.
